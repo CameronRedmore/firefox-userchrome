@@ -1,0 +1,4 @@
+/* Disable Bottom Buttons on Sidebar [[OPTIONAL - But no proper width if visible]] */
+.tools-and-extensions.actions-list {
+   display: none !important;
+}
