@@ -1,0 +1,26 @@
+#navigator-toolbox {
+    opacity: 0;
+    margin-top: -32px;
+    
+    
+    position: relative;
+    top: 0px;
+    
+    transition: all 0.25s, background-color var(--inactive-window-transition) !important;
+
+    & * {
+        opacity: 0;
+    }
+}
+
+#navigator-toolbox:hover, #navigator-toolbox:active, #navigator-toolbox:focus, #navigator-toolbox:focus-within {
+    opacity: 1;
+    top: 32px;
+
+    z-index: 6 !important;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+
+    & * {
+        opacity: 1;
+    }
+}

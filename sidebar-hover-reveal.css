@@ -8,18 +8,15 @@
    --sidebar-transition-duration: 0.15s;
 }
 
-#sidebar-main:not(:hover) {
-   width: var(--sidebar-not-hovered-width) !important;
-}
-
-#sidebar-main:hover { 
-   margin-right: calc(-1 * (var(--sidebar-hovered-width) - 50px)) !important;
-   width: var(--sidebar-hovered-width) !important;
-}
-
 #sidebar-main {
+   width: var(--sidebar-not-hovered-width) !important;
    transition: var(--sidebar-transition-duration) !important;
    z-index: 5 !important;
+}
+
+#sidebar-main:hover, #sidebar-main:active, #sidebar-main:focus, #sidebar-main:focus-within { 
+   margin-right: calc(-1 * (var(--sidebar-hovered-width) - 50px)) !important;
+   width: var(--sidebar-hovered-width) !important;
 }
 
 #tabbrowser-tabs[orient="vertical"] {

@@ -22,6 +22,8 @@ Once this is done, you can modify your userChrome.css and include `@import` stat
 @import url(firefox-userchrome/sidebar-hover-reveal.css);
 @import url(firefox-userchrome/sidebar-remove-bottom-buttons.css);
 @import url(firefox-userchrome/sidebar-remove-browser-outline.css);
+@import url(firefox-userchrome/toolbox-hover-reveal.css);
+@import url(firefox-userchrome/url-searchbar-hide-extension-page.css);
 @import url(firefox-userchrome/url-searchbar-rounded.css);
 @import url(firefox-userchrome/url-searchbar-translucent.css);
 @import url(firefox-userchrome/custom-browser-pane-margin-and-rounding.css);
