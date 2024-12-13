@@ -1,0 +1,60 @@
+/* Sidebar Hover Reveal Mod */
+
+/* Set variables for the sidebar expand. */
+:root {
+   --sidebar-not-hovered-width: 50px; /* Other values not tested */
+   --sidebar-hovered-width: 226px !important; /* Other values not tested */
+
+   --sidebar-transition-duration: 0.15s;
+}
+
+#sidebar-main:not(:hover) {
+   width: var(--sidebar-not-hovered-width) !important;
+}
+
+#sidebar-main:hover { 
+   margin-right: calc(-1 * (var(--sidebar-hovered-width) - 50px)) !important;
+   width: var(--sidebar-hovered-width) !important;
+}
+
+#sidebar-main {
+   transition: var(--sidebar-transition-duration) !important;
+   z-index: 5 !important
+}
+
+#tabbrowser-tabs[orient="vertical"] {
+   &:not([expanded]) {
+     & .tab-label-container, & .tab-close-button {
+       display: block !important;
+       opacity: 0;
+       transition: opacity var(--sidebar-transition-duration) !important;
+     }
+
+     & .tab-label-container {
+      padding-left: 5px;
+      width: calc(var(--sidebar-hovered-width) - 20px);
+     }
+   }
+
+   & .tab-background {
+      transition: var(--sidebar-transition-duration) !important;
+   }
+   
+   & .tabbrowser-tab {
+      transition: var(--sidebar-transition-duration) !important;
+   }
+
+   & * {
+      transition: var(--sidebar-transition-duration) !important;
+   }
+ }
+
+#sidebar-main:hover #tabbrowser-tabs[orient="vertical"] {
+   --tab-collapsed-background-width: calc(var(--sidebar-hovered-width) - 20px) !important;
+   
+   &:not([expanded]) {
+     & .tab-label-container, & .tab-close-button {
+      opacity: 1;
+     }
+   }
+}
