@@ -1,0 +1,7 @@
+/* Remove the built in Browser box outline and box shadow which looks a bit odd with sidebar. [[OPTIONAL]] */
+#tabbrowser-tabbox {
+   @media (-moz-bool-pref: "sidebar.revamp") {
+      outline: none !important;
+      box-shadow: none !important;
+   }
+}
