@@ -1,7 +1,7 @@
 /* Add slight margin, rounding and outline to Browser pane */
 #tabbrowser-tabbox browser {
    --border-size: 0.5px;
-   --margin-size-top-left: 2px;
+   --margin-size-top-left: 4px;
    --margin-size-bottom-right: 6px;
    --rounding-size: 8px;
 
