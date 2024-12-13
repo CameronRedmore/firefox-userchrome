@@ -1,0 +1,4 @@
+/* Round the URL / search bar in the header */
+#urlbar-container {
+   --toolbarbutton-border-radius: 16px !important;
+}
