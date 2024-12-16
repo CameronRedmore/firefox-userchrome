@@ -3,11 +3,11 @@
     margin-top: -38px;
     
     z-index: 6 !important;
-    
+
     position: relative;
     top: 0px;
     
-    transition: all 0.25s, background-color var(--inactive-window-transition) !important;
+    transition: all 0.25s ease, background-color var(--inactive-window-transition) !important;
 
     & * {
         opacity: 0;
@@ -24,4 +24,12 @@
     & * {
         opacity: 1;
     }
+}
+
+body {
+   background: var(--toolbox-bgcolor);
+
+   &:-moz-window-inactive {
+      background: var(--toolbox-bgcolor-inactive);
+   }
 }

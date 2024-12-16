@@ -5,7 +5,7 @@
    --sidebar-not-hovered-width: 50px; /* Other values not tested */
    --sidebar-hovered-width: 226px !important; /* Other values not tested */
 
-   --sidebar-transition-duration: 0.15s;
+   --sidebar-transition-duration: 0.15s ease;
 }
 
 #sidebar-main {
