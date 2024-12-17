@@ -1,6 +1,14 @@
+#main-window {
+    --toolbox-offset: 30px;
+}
+
+#main-window[sizemode="maximized"] {
+    --toolbox-offset: 38px;
+}
+
 #navigator-toolbox {
     opacity: 0;
-    margin-top: -38px;
+    margin-top: calc(-1 * var(--toolbox-offset));
     
     z-index: 6 !important;
 
@@ -17,7 +25,7 @@
 
 #navigator-toolbox:hover, #navigator-toolbox:active, #navigator-toolbox:focus, #navigator-toolbox:focus-within {
     opacity: 1;
-    top: 38px;
+    top: var(--toolbox-offset);
 
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 
