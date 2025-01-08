@@ -12,11 +12,19 @@
    width: var(--sidebar-not-hovered-width) !important;
    transition: var(--sidebar-transition-duration) !important;
    z-index: 5 !important;
+
+   background: var(--toolbox-bgcolor);
+
+   &:-moz-window-inactive {
+      background: var(--toolbox-bgcolor-inactive);
+   }
 }
 
 #sidebar-main:hover, #sidebar-main:active, #sidebar-main:focus, #sidebar-main:focus-within { 
    margin-right: calc(-1 * (var(--sidebar-hovered-width) - 50px)) !important;
    width: var(--sidebar-hovered-width) !important;
+
+   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 #tabbrowser-tabs[orient="vertical"] {
